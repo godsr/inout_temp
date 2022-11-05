@@ -1,0 +1,207 @@
+/* ------------------------------------------------------------------------------- */
+/* color */
+.cgr50 {color: #DCF1AA!important;}
+.cgr100 {color: #6ED90B!important;}
+.cgr200 {color: #8FB535!important;}
+.cgr300 {color: #56A30F!important;}
+.cor100 {color: #FF5C00!important;}
+.cyw100 {color: #FFD500!important;}
+
+.c100 {color: #e3e3e3!important;}
+.c200 {color: #565C54!important;}
+.c300 {color: #41473F!important;}
+.c400 {color: #434742!important;}
+.c500 {color: #21241E!important;}
+.c600 {color: #1C1F18;}
+.c700 {color: #131412;}
+.c000 {color: #000;}
+
+.bg-p1 {background: #0D0F0B;}
+.bg-p2 {background: #171A16;}
+
+.bp100 {background: #e3e3e3!important;}
+.bp200 {background: #565C54!important;}
+.bp300 {background: #41473F!important;}
+.bp400 {background: #434742!important;}
+.bp500 {background: #21241E!important;}
+.bp600 {background: #1C1F18!important;}
+.bp700 {background: #131412!important;}
+.bp000 {background: #000!important;}
+
+.bor100 {background: #FF5C00!important;}
+.byw100 {background: #FFD500!important;}
+.bor100 {background: #E57A00!important;}
+
+.cred100 {color: #eb3556!important;}
+.cred200 {color: #D9324E!important;}
+.cred300 {color: #AB1032!important;}
+
+
+
+.b100 {background: #dde1e6;}
+.b200{background: #c1c7cd;}
+.b300 {background: #a2a9b0;}
+.b400 {background: #878d96;}
+.b500 {background: #697077;}
+.b600{background: #4d5358;}
+.b700 {background: #373b3e;}
+.b800 {background: #252a2e;}
+.b900 {background: #21241E;}
+
+
+.bd100 {border: 1px solid #434742;}
+.bd200 {border: 1px solid #393D39;}
+
+.gradient-1 {background: linear-gradient(to bottom right, #292D32, #344154);}
+.gradient-2 {background: linear-gradient(to bottom right, rgba(217,50,78,100), rgba(199,74,104,0.95), rgba(125,42,60,0.95));}
+.gradient-gr1 {background: linear-gradient(180deg, #3C7D06 0%, #DBC89C 100%);}
+.gradient-gr2 {background: linear-gradient(90.06deg, #427D0B 0.98%, #7D8F37 99.97%);}
+
+
+/* ------------------------------------------------------------------------------- */
+/* input cal 영역 */
+input[type="date"] {
+    content: '';
+    all: unset;
+    outline: none;
+    position: relative;
+    padding: 4px 8px;
+    width: 200px;
+    font-size: 1.4rem;
+    color: #fff;
+    background: url(/resources/static/images/ico-cal.svg) no-repeat right 12px center / 10px auto!important;
+    background-size: 20px!important;
+  }
+/* input[type="date"]:after {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 12px;
+    width: 24px;
+    height: 24px;
+    z-index: 0;
+  } */
+
+  input[type="date"]::-webkit-clear-button,
+  input[type="date"]::-webkit-inner-spin-button { display: none;} 
+  input[type="date"]::-webkit-calendar-picker-indicator { 
+      position: absolute;
+      z-index: 1;
+      left:0;
+      top:0;
+      width: 100%;
+      height: 100%;
+      background: transparent;
+      color:transparent;
+      cursor: pointer;
+  }
+
+    /* placeholder text style */
+    input[type="date"]::-webkit-datetime-edit-text,
+    input[type="date"]::-webkit-datetime-edit-month-field,
+    input[type="date"]::-webkit-datetime-edit-day-field,
+    input[type="date"]::-webkit-datetime-edit-year-field {
+    color: #a2a9b0;
+    }
+
+
+/* ------------------------------------------------------------------------------- */
+/* 헤더 영역 */
+.wrap {
+    height: 100vh;
+    background: #000;
+}
+.header-area {
+    height: 48px;
+    overflow: hidden;
+}
+.header-area .logo-box images {
+    height: 24px;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* container */
+.container { 
+    /* min-height: calc(100vh - 128px); */
+    padding: 40px 60px;
+    
+}
+
+.container-none { 
+}
+
+/* 컨텐츠박스 2개 일경우 */
+.box-depth1 { 
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-depth1:nth-child(1) { margin: 0px 32px 0 0; padding-right:0px;} 
+.box-depth1:nth-child(2) { padding-left:0px;} 
+.box-depth1-in { 
+    background: #21241E; 
+    border : 1px solid #393D39; 
+    border-radius:10px; 
+    box-sizing: border-box;
+    padding:24px;
+} 
+
+.box-depth1-in.set-h-1 { 
+    max-height: 674px!important;
+} 
+
+/* 컨텐츠 박스 1개일경우 */
+.box-depth2 { 
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.box-depth2-in { 
+    background: #21241E; 
+    border : 1px solid #393D39; 
+    border-radius:10px;
+    box-sizing: border-box;
+    padding:24px;
+} 
+.box-depth2-in.pd-edit { 
+    padding:20px!important;
+} 
+.box-depth2-in.pd-edit2 { 
+    padding:8px 20px!important;
+} 
+
+.box-depth3-in { 
+    background: #21241E;
+    border: 1px solid #393D39;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 24px;
+    min-height: 100%
+}
+
+.box-depth3 { 
+    background: #21241E;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+
+
+/*체크박스 */
+.check-text-type input[type="checkbox"] {
+   display: none;
+}
+.check-text-type input[type="checkbox"] {
+   display: inline-block;
+   width: 1.6rem;
+   height: 1.6rem;
+   cursor: pointer;
+   box-sizing: border-box;
+   position: relative;
+   border:none;
+   background: url(/resources/static/images/ico-check.svg) no-repeat center center/cover;
+   background-size: 16px 16px;
+}
+.check-text-type input[type="checkbox"]:checked {
+   background: url(/resources/static/images/ico-check-fill.svg) no-repeat center center/cover;
+}
