@@ -255,64 +255,15 @@ select {
     justify-content: center;
 }
 
-/*테이블 table*/
-
-.table {
-	border-spacing: 0 10px;
-	border-collapse: separate;
-}
-
-.table > thead {
-    font-size: 1.2rem;
-    color:#6ED90B;
-	position: sticky;
-	top: 0;
-    background-color: #131512;
-}
-
-.table > tbody > tr :first-child {
-    border-radius: 20px 0px 0px 20px;
-}
-
-.table > tbody > tr :last-child {
-    border-radius: 0px 20px 20px 0px;
-}
-
-.table tbody {
-    height: 25px;
-}
-
-.table > tbody > tr {
-    text-align: center;
-    font-size: 1.2rem;
-    background-color: #393D39;
-    height: 25px;
-}
-
 /* div table  */
 
 div.blueTable {
-    background-color: #EEEEEE;
     width: 100%;
     text-align: left;
     border-collapse: collapse;
   }
- .divTable.blueTable .divTableHead {
-    border: 1px solid #131512;
-    padding: 3px 2px;
-  }
-
-  .divTable.blueTable .divTableCell {
-    padding: 3px 2px;
-  }
-  .divTable.blueTable .divTableBody .divTableCell {
-    font-size: 13px;
-    text-align: center;
-  }
-  .divTable.blueTable .divTableRow {
-    background: #393D39;
-  }
-  .divTable.blueTable .divTableHeading {
+  
+  .divTable.blueTable .divTableHeading .divTableRow {
     background: #131512;
   }
   .divTable.blueTable .divTableHeading .divTableHead {
@@ -321,11 +272,28 @@ div.blueTable {
     font-weight: bold;
     color: #6ED90B;
     text-align: center;
+    border: 1px solid #131512;
+    padding: 3px 2px 10px;
+  }
+  .divTable.blueTable .divTableBody .divTableRow {
+    border: 3px solid #131512;
   }
   
-  .blueTable .tableFootStyle .links {
-       text-align: right;
+  .divTable.blueTable  .divTableBody .divTableRow :first-child{
+    border-radius: 20px 0px 0px 20px;
   }
+
+  .divTable.blueTable  .divTableBody .divTableRow :last-child{
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .divTable.blueTable .divTableBody .divTableCell {
+    background: #393D39;
+    font-size: 13px;
+    text-align: center;
+    padding: 3px 2px ;
+  }
+
   /* DivTable.com */
   .divTable{ display: table; }
   .divTableRow { display: table-row; }
