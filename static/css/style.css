@@ -302,3 +302,31 @@ div.blueTable {
   .divTableHeading { display: table-header-group;}
   .divTableFoot { display: table-footer-group;}
   .divTableBody { display: table-row-group;}
+
+  /* inout chart */
+
+  .staticchart {
+    border: solid 2px #6ED90B; 
+	margin: 5px;
+    width: 30%;
+	height: 90px;
+	color: whitesmoke;
+	text-align: center;
+	border-radius: 8px;
+  }
+  .staticchart .chartHeader {
+    font-size: 20px;
+    margin-top: 4px;
+  }
+  .staticchart .chartBody {
+    color:#6ED90B;
+    font-size: 30px;
+    margin-top: 8px;
+  }
+  .staticchart .chartFooter {
+    color:#edf4e59a;
+    font-size: 20px;
+    margin-top: 4px;
+  }
+
+  
