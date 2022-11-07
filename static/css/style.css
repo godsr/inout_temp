@@ -255,12 +255,20 @@ select {
     justify-content: center;
 }
 
+.widgetDiv {
+    width:100%; 
+    height:700px;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;  /* firefox */
+}
+
 /* div table  */
 
 div.blueTable {
     width: 100%;
     text-align: left;
     border-collapse: collapse;
+    height: 800px;
   }
   
   .divTable.blueTable .divTableHeading .divTableRow {
@@ -272,8 +280,10 @@ div.blueTable {
     font-weight: bold;
     color: #6ED90B;
     text-align: center;
-    border: 1px solid #131512;
+    border: 0px solid #131512;
     padding: 3px 2px 10px;
+    position: sticky;
+    top: 0;
   }
   .divTable.blueTable .divTableBody .divTableRow {
     border: 3px solid #131512;
@@ -329,4 +339,22 @@ div.blueTable {
     margin-top: 4px;
   }
 
+
+  /* scroll bar */
+
+  .widgetDiv::-webkit-scrollbar {
+	width: 3px;
+    display: none; /* Chrome, Safari, Opera*/
+  }
+  
+  .widgetDiv::-webkit-scrollbar-thumb {
+    background-color: #41473f;
+	border-radius: 4px;
+	width: 10px;
+  }
+  
+  .widgetDiv::-webkit-scrollbar-track {
+    background-color: transparent;
+    width: 10px;
+  }
   
